@@ -1,5 +1,18 @@
 # Real-Url
 
+## 需要的python库
+
+```bash
+
+pip install pycryptodome
+
+```
+
+## 感谢
+
+感谢原作者wbt5  https://github.com/wbt5/real-url
+我这里对弹幕功能做了一些小改动，使其支持写入到文件
+
 ## 说明
 
 这个仓库存放的是：获取一些直播平台真实流媒体地址（直播源）和弹幕的 Python 代码实现。获取的地址经测试，均可在 PotPlayer、VLC、DPlayer(flv.js + hls.js)等播放器中播放。

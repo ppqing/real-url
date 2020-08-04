@@ -4,13 +4,16 @@
 
 import asyncio
 import danmaku
-
+import time
 
 async def printer(q):
+    filename = input('请输入想要保存的文件名\n')
     while True:
         m = await q.get()
         if m['msg_type'] == 'danmaku':
             print(f'{m["name"]}：{m["content"]}')
+            with open(filename+".txt", mode='a',encoding="utf-8") as f:
+                f.write(f'{time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())} {m["name"]}：{m["content"]}\n')
 
 
 async def main(url):

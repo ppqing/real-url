@@ -4,6 +4,8 @@
 
 ```bash
 
+pip install aiohttp
+pip install protobuf
 pip install pycryptodome
 
 ```
